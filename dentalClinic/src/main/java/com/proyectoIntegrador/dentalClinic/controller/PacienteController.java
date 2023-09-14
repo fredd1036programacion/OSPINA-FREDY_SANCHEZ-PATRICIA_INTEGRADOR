@@ -16,6 +16,7 @@ import java.util.List;
 
 
 @RestController
+@CrossOrigin
 @RequestMapping("/pacientes")
 
 public class PacienteController {
@@ -48,7 +49,7 @@ public class PacienteController {
 
 
     @GetMapping(path = "consultaPaciente/{id}")
-    public ResponseEntity<PacienteSalidaDto> consultarPaciente(Long id) {
+    public ResponseEntity<PacienteSalidaDto> consultarPaciente(@PathVariable Long id) {
         return new ResponseEntity<>(pacienteService.buscarPacientePorId(id), HttpStatus.FOUND);
     }
 

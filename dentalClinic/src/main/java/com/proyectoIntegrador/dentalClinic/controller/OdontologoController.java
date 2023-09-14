@@ -14,6 +14,8 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+// salia un error en la api que no dejaba desde js ejecutar en fetch de local host. se corrige con el @Crossorigin.
+@CrossOrigin
 @RequestMapping("/odontologos")
 public class OdontologoController {
 
@@ -44,7 +46,7 @@ public class OdontologoController {
 
 
     @GetMapping(path = "/consultaOdontologo/{id}")
-    public ResponseEntity<OdontologoSalidaDto> consultarOdontologo(Long id) {
+    public ResponseEntity<OdontologoSalidaDto> consultarOdontologo(@PathVariable Long id) {
         return new ResponseEntity<>(odontologoService.buscarOdontologoPorId(id), HttpStatus.FOUND);
     }
 

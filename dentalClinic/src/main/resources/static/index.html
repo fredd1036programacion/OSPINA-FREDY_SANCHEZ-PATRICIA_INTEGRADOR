@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de Paciente, Odontólogo y Turno</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios de Paciente, Odontólogo y Turno</h1>
+        
+    </header>
+
+    <main class="contenedor">
+        <h1>Paciente</h1>
+        <!-- Agrupador 1: Pacientes -->
+        <fieldset>
+            <legend>Pacientes</legend>
+
+            <!-- Formulario 1: Registrar Paciente -->
+            <fieldset class="formularioPacienteRegistrar">
+                <legend>Formulario 1: Registrar Paciente</legend>
+                <form action="#" method="post" id="registrarPacienteForm">
+                    <label for="nombrePaciente">Nombre:</label>
+                    <input type="text" id="nombrePaciente" name="nombrePaciente" required>
+
+                    <label for="apellidoPaciente">Apellido:</label>
+                    <input type="text" id="apellidoPaciente" name="apellidoPaciente" required>
+
+                    <label for="dniPaciente">DNI:</label>
+                    <input type="number" id="dniPaciente" name="dniPaciente" required>
+
+                    <label for="fechaIngresoPaciente">Fecha de Ingreso:</label>
+                    <input type="text" id="fechaIngresoPaciente" name="fechaIngresoPaciente" required>
+
+                    <label for="callePaciente">Calle:</label>
+                    <input type="text" id="callePaciente" name="callePaciente" required>
+
+                    <label for="numeroPaciente">Número:</label>
+                    <input type="number" id="numeroPaciente" name="numeroPaciente" required>
+
+                    <label for="localidadPaciente">Localidad:</label>
+                    <input type="text" id="localidadPaciente" name="localidadPaciente" required>
+
+                    <label for="provinciaPaciente">Provincia:</label>
+                    <input type="text" id="provinciaPaciente" name="provinciaPaciente" required>
+
+                    <div class="acciones">
+                        <button type="submit">Registrar Paciente</button>
+                    </div>
+                </form>
+            <fieldset>
+                <div class="registrarPacienteFormrespuesta">
+
+                </div>
+            </fieldset>
+            </fieldset>
+
+            <!-- Formulario 2: Buscar Paciente por ID -->
+            <fieldset class="formularioPacienteBuscar">
+                <legend>Formulario 2: Buscar Paciente por ID</legend>
+                <form action="#" method="post" id="buscarPacientePorIdForm">
+                    <label for="idPacienteBuscar">ID del Paciente:</label>
+                    <input type="text" id="idPacienteBuscar" name="idPacienteBuscar" required>
+
+                    <div class="acciones">
+                        <button type="submit" class="boton">Buscar Paciente por ID</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="buscarPacienteFormrespuesta">
+    
+                    </div>
+                </fieldset>
+
+            </fieldset>
+
+            <!-- Formulario 3: Listar Pacientes -->
+            <fieldset class="formularioPacienteListar">
+                <legend>Formulario 3: Listar Pacientes</legend>
+                <form action="#" method="post" id="listarPacientesForm">
+                    <div class="acciones">
+                        <button type="submit">Listar Pacientes</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="formularioPacienteListartodos">
+                        
+    
+                    </div>
+
+                </fieldset>
+            </fieldset>
+
+
+
+            <!-- Formulario 4: Eliminar Paciente -->
+            <fieldset class="formularioPacienteEliminar">
+                <legend>Formulario 4: Eliminar Paciente</legend>
+                <form action="#" method="post" id="eliminarPacienteForm">
+                    <label for="idPacienteEliminar">ID del Paciente a eliminar:</label>
+                    <input type="text" id="idPacienteEliminar" name="idPacienteEliminar" required>
+
+                    <div class="acciones">
+                        <button type="submit">Eliminar Paciente</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="formularioPacienteeliminardato">
+                        
+    
+                    </div>
+
+                </fieldset>
+
+            </fieldset>
+
+            <!-- Formulario 5: Modificar Paciente -->
+            <fieldset class="formularioPacienteModificar">
+                <legend>Formulario 5: Modificar Paciente</legend>
+                <form action="#" method="post" id="modificarPacienteForm">
+                    <label for="idPacienteModificar">ID del Paciente a modificar:</label>
+                    <input type="text" id="idPacienteModificar" name="idPacienteModificar" required>
+
+                    <!-- Formulario 5.1: Campos a modificar -->
+                    <fieldset>
+                        <legend>Campos a modificar</legend>
+                        <label for="nombrePacienteModificar">Nombre:</label>
+                        <input type="text" id="nombrePacienteModificar" name="nombrePacienteModificar" required>
+
+                        <label for="apellidoPacienteModificar">Apellido:</label>
+                        <input type="text" id="apellidoPacienteModificar" name="apellidoPacienteModificar" required>
+
+                        <label for="dniPacienteModificar">DNI:</label>
+                        <input type="number" id="dniPacienteModificar" name="dniPacienteModificar" required>
+
+                        <label for="fechaIngresoPacienteModificar">Fecha de Ingreso:</label>
+                        <input type="text" id="fechaIngresoPacienteModificar" name="fechaIngresoPacienteModificar" required>
+
+                        <label for="callePacienteModificar">Calle:</label>
+                        <input type="text" id="callePacienteModificar" name="callePacienteModificar" required>
+
+                        <label for="numeroPacienteModificar">Número:</label>
+                        <input type="number" id="numeroPacienteModificar" name="numeroPacienteModificar" required>
+
+                        <label for="localidadPacienteModificar">Localidad:</label>
+                        <input type="text" id="localidadPacienteModificar" name="localidadPacienteModificar" required>
+
+                        <label for="provinciaPacienteModificar">Provincia:</label>
+                        <input type="text" id="provinciaPacienteModificar" name="provinciaPacienteModificar" required>
+                    </fieldset>
+                    <!-- Fin Formulario 5.1 -->
+
+                    <div class="acciones">
+                        <button type="submit">Modificar Paciente</button>
+                    </div>
+                </form>
+            </fieldset>
+            <!-- Fin Formulario 5 -->
+
+
+            <fieldset>
+                <div class="formularioPacientemodificar">
+                    
+
+                </div>
+
+            </fieldset>
+
+
+        </fieldset>
+        <!-- Fin Agrupador 1: Pacientes -->
+
+
+
+
+
+
+
+
+
+        <h1>Odontologo</h1>
+        <!-- Agrupador 2: Odontologos -->
+        <fieldset>
+            <legend>Odontologos</legend>
+
+            <!-- Formulario 1: Registrar Odontologo -->
+            <fieldset class="formularioOdontologoRegistrar">
+                <legend>Formulario 1: Registrar Odontologo</legend>
+                <form action="#" method="post" id="registrarOdontologoForm">
+                    <label for="matriculaOdontologo">matricula:</label>
+                    <input type="text" id="matriculaOdontologo" name="matriculaOdontologo" required>
+
+                    <label for="nombreOdontologo">nombre:</label>
+                    <input type="text" id="nombreOdontologo" name="nombreOdontologo" required>
+
+                    <label for="apellidoOdontologo">Apellido:</label>
+                    <input type="text" id="apellidoOdontologo" name="apellidoOdontologo" required>
+
+                    <div class="acciones">
+                        <button type="submit">Registrar Odontologo</button>
+                    </div>
+                </form>
+            <fieldset>
+                <div class="registrarOdontologoFormrespuesta">
+
+                </div>
+            </fieldset>
+            </fieldset>
+
+
+
+
+
+
+
+            <!-- Formulario 2: Buscar Odontologo por ID -->
+            <fieldset class="formularioOdontologoBuscar">
+                <legend>Formulario 2: Buscar Odontologo por ID</legend>
+                <form action="#" method="post" id="buscarOdontologoPorIdForm">
+                    <label for="idOdontologoBuscar">ID del Odontologo:</label>
+                    <input type="text" id="idOdontologoBuscar" name="idOdontologoBuscar" required>
+
+                    <div class="acciones">
+                        <button type="submit" class="boton">Buscar Odontologo por ID</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="buscarOdontologoFormrespuesta">
+    
+                    </div>
+                </fieldset>
+
+
+
+
+
+
+            </fieldset>
+
+            <!-- Formulario 3: Listar Odontologos -->
+            <fieldset class="formularioOdontologoListar">
+                <legend>Formulario 3: Listar Odontologos</legend>
+                <form action="#" method="post" id="listarOdontologosForm">
+                    <div class="acciones">
+                        <button type="submit">Listar Odontologos</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="formularioOdontologoListartodos">
+                        
+    
+                    </div>
+
+                </fieldset>
+            </fieldset>
+
+
+
+
+
+
+            <!-- Formulario 4: Eliminar Odontologo -->
+            <fieldset class="formularioOdontologoEliminar">
+                <legend>Formulario 4: Eliminar Odontologo</legend>
+                <form action="#" method="post" id="eliminarOdontologoForm">
+                    <label for="idOdontologoEliminar">ID del Odontologo a eliminar:</label>
+                    <input type="text" id="idOdontologoEliminar" name="idOdontologoEliminar" required>
+
+                    <div class="acciones">
+                        <button type="submit">Eliminar Odontologo</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="formularioOdontologoeliminardato">
+                        
+    
+                    </div>
+
+                </fieldset>
+
+            </fieldset>
+
+
+            
+
+            <!-- Formulario 5: Modificar Odontologo -->
+            <fieldset class="formularioOdontologoModificar">
+                <legend>Formulario 5: Modificar Odontologo</legend>
+                <form action="#" method="post" id="modificarOdontologoForm">
+                    <label for="idOdontologoModificar">ID del Odontologo a modificar:</label>
+                    <input type="number" id="idOdontologoModificar" name="idOdontologoModificar" required>
+
+                    <!-- Formulario 5.1: Campos a modificar -->
+                    <fieldset>
+                        <legend>Campos a modificar</legend>
+                        <label for="nombreOdontologoModificar">Nombre:</label>
+                        <input type="text" id="nombreOdontologoModificar" name="nombreOdontologoModificar" required>
+
+                        <label for="apellidoOdontologoModificar">Apellido:</label>
+                        <input type="text" id="apellidoOdontologoModificar" name="apellidoOdontologoModificar" required>
+
+                        <label for="matriculaOdontologoModificar">Matricula:</label>
+                        <input type="number" id="matriculaOdontologoModificar" name="matriculaOdontologoModificar" required>
+
+                    </fieldset>
+                    <!-- Fin Formulario 5.1 -->
+
+                    <div class="acciones">
+                        <button type="submit">Modificar Odontologo</button>
+                    </div>
+                </form>
+            </fieldset>
+            <!-- Fin Formulario 5 -->
+
+            <fieldset>
+                <div class="formularioOdontologomodificar">
+                    
+
+                </div>
+
+            </fieldset>
+
+        </fieldset>
+        <!-- Fin Agrupador 1: Odontologos -->
+
+
+
+
+
+
+
+
+        <h1>Turno</h1>
+        <!-- Agrupador 3: Turnos -->
+        <fieldset>
+            <legend>Turnos</legend>
+
+            <!-- Formulario 1: Registrar Turno -->
+            <fieldset class="formularioTurnoRegistrar">
+                <legend>Formulario 1: Registrar Turno</legend>
+                <form action="#" method="post" id="registrarTurnoForm">
+                    <label for="odontologoIdTurno">Id odontologo:</label>
+                    <input type="number" id="odontologoIdTurno" name="odontologoIdTurno" required>
+
+                    <label for="pacienteIdTurno">Id paciente:</label>
+                    <input type="number" id="pacienteIdTurno" name="pacienteIdTurno" required>
+
+                    <label for="LocalDateTimeTurno">Apellido:</label>
+                    <input type="text" id="LocalDateTimeTurno" name="LocalDateTimeTurno" required>
+
+                    <div class="acciones">
+                        <button type="submit">Registrar Turno</button>
+                    </div>
+                </form>
+            <fieldset>
+                <div class="registrarTurnoFormrespuesta">
+
+                </div>
+            </fieldset>
+            </fieldset>
+
+
+
+
+
+
+            <!-- Formulario 2: Buscar Turno por ID -->
+            <fieldset class="formularioTurnoBuscar">
+                <legend>Formulario 2: Buscar Turno por ID</legend>
+                <form action="#" method="post" id="buscarTurnoPorIdForm">
+                    <label for="idTurnoBuscar">ID del Turno:</label>
+                    <input type="text" id="idTurnoBuscar" name="idTurnoBuscar" required>
+
+                    <div class="acciones">
+                        <button type="submit" class="boton">Buscar Turno por ID</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="buscarTurnoFormrespuesta">
+    
+                    </div>
+                </fieldset>
+
+
+
+
+
+            </fieldset>
+
+            <!-- Formulario 3: Listar Turnos -->
+            <fieldset class="formularioTurnoListar">
+                <legend>Formulario 3: Listar Turnos</legend>
+                <form action="#" method="post" id="listarTurnosForm">
+                    <div class="acciones">
+                        <button type="submit">Listar Turnos</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="formularioTurnoListartodos">
+                        
+    
+                    </div>
+
+                </fieldset>
+            </fieldset>
+
+
+
+
+
+            <!-- Formulario 4: Eliminar Turno -->
+            <fieldset class="formularioTurnoEliminar">
+                <legend>Formulario 4: Eliminar Turno</legend>
+                <form action="#" method="post" id="eliminarTurnoForm">
+                    <label for="idTurnoEliminar">ID del Turno a eliminar:</label>
+                    <input type="text" id="idTurnoEliminar" name="idTurnoEliminar" required>
+
+                    <div class="acciones">
+                        <button type="submit">Eliminar Turno</button>
+                    </div>
+                </form>
+
+                <fieldset>
+                    <div class="formularioTurnoeliminardato">
+                        
+    
+                    </div>
+
+                </fieldset>
+
+            </fieldset>
+
+            
+
+            <!-- Formulario 5: Modificar Turno -->
+            <fieldset class="formularioTurnoModificar">
+                <legend>Formulario 5: Modificar Turno</legend>
+                <form action="#" method="post" id="modificarTurnoForm">
+                    <label for="idTurnoModificar">ID del Turno a modificar:</label>
+                    <input type="number" id="idTurnoModificar" name="idTurnoModificar" required>
+
+                    <!-- Formulario 5.1: Campos a modificar -->
+                    <fieldset>
+                        <legend>Campos a modificar</legend>
+                        <label for="IdPacienteTurnoModificar">id Paciente:</label>
+                        <input type="text" id="IdPacienteTurnoModificar" name="IdPacienteTurnoModificar" required>
+
+                        <label for="IdOdontologoTurnoModificar">id Odontologo:</label>
+                        <input type="text" id="IdOdontologoTurnoModificar" name="IdOdontologoTurnoModificar" required>
+
+                        <label for="fechaYHoraTurnoModificar">fechaYHora:</label>
+                        <input type="text" id="fechaYHoraTurnoModificar" name="fechaYHoraTurnoModificar" required>
+
+                    </fieldset>
+                    <!-- Fin Formulario 5.1 -->
+
+                    <div class="acciones">
+                        <button type="submit">Modificar Turno</button>
+                    </div>
+                </form>
+            </fieldset>
+            <!-- Fin Formulario 5 -->
+
+            <fieldset>
+                <div class="formularioTurnomodificar">
+                    
+
+                </div>
+
+            </fieldset>
+
+        </fieldset>
+        <!-- Fin Agrupador 1: Turnos -->
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+    
+    </footer>
+
+    <script src="./js/scriptPacientes.js"></script>
+    <script src="./js/scriptOdontologo.js"></script>
+    <script src="./js/scriptTurno.js"></script>
+</body>
+</html>
